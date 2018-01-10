@@ -15,6 +15,10 @@ en:
       home: "Home"
       help: "Help"
       log_in: "Log in"
+  shared:
+    error_messages:
+      form: "The form contains"
+      error: "error"
   static_pages:
     about:
       about: "About"
@@ -43,3 +47,10 @@ en:
       tutorial: "Ruby on Rails Tutorial"
       sample_app: "sample application"
       sign_up: "Sign up now!"
+  users:
+    new:
+      sign_up: "Sign up"
+      create_account: "Create my account"
+      confir: "Confirmation"
+    create:
+      welcome: "Welcome to the Sample App!"
