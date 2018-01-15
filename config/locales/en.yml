@@ -15,10 +15,26 @@ en:
       home: "Home"
       help: "Help"
       log_in: "Log in"
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      log_out: "Log out"
+
+  sessions:
+    new:
+      log_in: "Log in"
+      remember_me: "Remember me on this computer"
+      sign_up: "Sign up now!"
+      new_user: "New user"
+    create:
+      invalid: "Invalid email/password combination"
+
   shared:
     error_messages:
       form: "The form contains"
       error: "error"
+
   static_pages:
     about:
       about: "About"
@@ -47,6 +63,7 @@ en:
       tutorial: "Ruby on Rails Tutorial"
       sample_app: "sample application"
       sign_up: "Sign up now!"
+
   users:
     new:
       sign_up: "Sign up"
