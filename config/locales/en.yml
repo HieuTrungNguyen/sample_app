@@ -1,6 +1,8 @@
 en:
   hello: "Hello world"
   tutorial: "Ruby on Rails Tutorial Sample App"
+  log_in: "Please log in"
+
   layouts:
     footer:
       the: "The"
@@ -65,9 +67,25 @@ en:
       sign_up: "Sign up now!"
 
   users:
+    form:
+      confirm: "Confirm password"
+    user:
+      delete: "delete"
+      sure: "You sure?"
     new:
       sign_up: "Sign up"
       create_account: "Create my account"
       confir: "Confirmation"
     create:
       welcome: "Welcome to the Sample App!"
+
+    edit:
+      updated: "Your profile is updated!"
+      not_updated: "Your profile isn't updated!"
+      edit: "Edit User"
+      save_change: "Save changes"
+      update: "Update your profile"
+    index:
+      all_users: "All Users"
+    destroy:
+      deleted: "%{name} have been deleted"
