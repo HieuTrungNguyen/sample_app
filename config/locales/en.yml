@@ -23,9 +23,25 @@ en:
       settings: "Settings"
       log_out: "Log out"
 
+  password_resets:
+    create:
+      sent_email: "Email sent with password reset instructions"
+      email_not_found: "Email address not found!"
+    edit:
+      reset_pass: "Reset password"
+      confirm: "Confirm"
+      update_pass: "Update password"
+      forgot_pass: "Forgot Password"
+      submit: "Submit"
+    update:
+      not_empty: "can't be empty"
+      reset: "Password has been reset."
+      expired: "Password reset has expired."
+
   sessions:
     new:
       log_in: "Log in"
+      forgot_pass: "(forgot password)"
       remember_me: "Remember me on this computer"
       sign_up: "Sign up now!"
       new_user: "New user"
@@ -79,9 +95,10 @@ en:
     create:
       welcome: "Welcome to the Sample App!"
 
-    edit:
+    update:
       updated: "Your profile is updated!"
       not_updated: "Your profile isn't updated!"
+    edit:
       edit: "Edit User"
       save_change: "Save changes"
       update: "Update your profile"
