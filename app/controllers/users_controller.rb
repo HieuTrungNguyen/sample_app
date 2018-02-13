@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :load_user, except: [:new, :create, :index]
   before_action :logged_in_user, except: [:new, :create]
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: [:destroy]
@@ -23,15 +24,13 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find_by id: params[:id]
+    @microposts = @user.microposts.paginate page: params[:page]
   end
 
   def edit
-    @user = User.find_by id: params[:id]
   end
 
   def update
-    @user = User.find_by id: params[:id]
     if @user.update_attributes user_params
       flash[:success] = t ".updated"
       redirect_to @user
@@ -42,7 +41,6 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @user = User.find_by id: params[:id]
     @user.destroy
     flash[:success] = t(".deleted", name: @user.name)
     redirect_to users_url
@@ -53,12 +51,8 @@ class UsersController < ApplicationController
     params.require(:user).permit :name, :email, :password, :password_confirmation
   end
 
-  def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = t "log_in"
-      redirect_to login_url
-    end
+  def load_user
+    @user = User.find_by id: params[:id]
   end
 
   def correct_user

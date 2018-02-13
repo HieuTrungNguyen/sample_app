@@ -23,7 +23,20 @@ en:
       settings: "Settings"
       log_out: "Log out"
 
+  microposts:
+    create:
+      created: "Micropost created!"
+    destroy:
+      deleted: "Micropost deleted!"
+    micropost:
+      posted: "Posted"
+      ago: "ago"
+      sure: "You sure?"
+
   password_resets:
+    new:
+      forgot_pass: "Forgot Password"
+      submit: "Submit"
     create:
       sent_email: "Email sent with password reset instructions"
       email_not_found: "Email address not found!"
@@ -31,8 +44,6 @@ en:
       reset_pass: "Reset password"
       confirm: "Confirm"
       update_pass: "Update password"
-      forgot_pass: "Forgot Password"
-      submit: "Submit"
     update:
       not_empty: "can't be empty"
       reset: "Password has been reset."
@@ -52,6 +63,11 @@ en:
     error_messages:
       form: "The form contains"
       error: "error"
+    micropost_form:
+      compose: "Compose new micropost..."
+      post: "Post"
+    user_info:
+      view_profile: "view my profile"
 
   static_pages:
     about:
@@ -81,6 +97,7 @@ en:
       tutorial: "Ruby on Rails Tutorial"
       sample_app: "sample application"
       sign_up: "Sign up now!"
+      micropost_feed: "Micropost Feed"
 
   users:
     form:
@@ -94,6 +111,8 @@ en:
       confir: "Confirmation"
     create:
       welcome: "Welcome to the Sample App!"
+    show:
+      microposts: "Microposts"
 
     update:
       updated: "Your profile is updated!"
