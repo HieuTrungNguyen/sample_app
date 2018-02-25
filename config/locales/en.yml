@@ -68,6 +68,9 @@ en:
       post: "Post"
     user_info:
       view_profile: "view my profile"
+    stats:
+      following: "following"
+      followers: "followers"
 
   static_pages:
     about:
@@ -125,3 +128,11 @@ en:
       all_users: "All Users"
     destroy:
       deleted: "%{name} have been deleted"
+    following:
+      following: "Following"
+    followers:
+      followers: "Followers"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
